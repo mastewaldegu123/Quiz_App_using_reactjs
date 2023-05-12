@@ -4,6 +4,7 @@ import { QuizContext } from "../helpers/Context";
 const MainMenu = () => {
   const { gameState, setGameState } = useContext(QuizContext);
   return (
+    <div className="Menu">
     <div className="menu">
       <button
         onClick={() => {
@@ -12,6 +13,7 @@ const MainMenu = () => {
       >
         Start Quiz
       </button>
+    </div>
     </div>
   );
 };
